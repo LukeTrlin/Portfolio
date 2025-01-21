@@ -6,7 +6,8 @@ body{
     height: 100vh;
     background-color: hsl(0, 0%, 00%);
 }
-nav {
+
+.nav {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -21,7 +22,6 @@ nav {
     width: 100%;
     padding-left: 50px;
 }
-
 
 /* Styling for the links */
 a {
@@ -41,7 +41,6 @@ a:hover {
     
     color: hsl(1, 0%, 90%);
 }
-
 
 #calculator{
     z-index: 2;
@@ -81,7 +80,6 @@ button{
     border: none;
     background-color: hsl(0, 0%, 30%);
     color:white;
-    text-align: center;
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
