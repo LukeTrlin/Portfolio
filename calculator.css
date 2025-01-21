@@ -6,22 +6,22 @@ body{
     height: 100vh;
     background-color: hsl(0, 0%, 00%);
 }
-
-.nav {
+nav {
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     padding-top: 5px;
     display: flex;
-    justify-content: flex; /* Align the links to the right */
+    justify-content: flex-start; /* Align the links to the left or change to flex-end for right alignment */
     align-items: center; /* Vertically center the links */
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    height: 70px;
-    width: 100%; /* Ensure it spans the entire width of the screen */
-    padding-left: 50px; /* Optional: Space out the links from the right edge */
+    height: clamp(3vh, 5vh, 8vh); /* Navbar height will scale between 3% to 8% of the viewport height */
+    width: 100%;
+    padding-left: 50px;
 }
+
 
 /* Styling for the links */
 a {
@@ -42,7 +42,9 @@ a:hover {
     color: hsl(1, 0%, 90%);
 }
 
+
 #calculator{
+    z-index: 2;
     font-family: Arial, sans-serif;
     background-color:  #185770;
     border-radius: 15px;
